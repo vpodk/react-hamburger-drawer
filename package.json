@@ -1,0 +1,23 @@
+{
+  "name": "react-hamburger-drawer",
+  "version": "21.9.1",
+  "description": "Simple lightweight react hamburger navigation drawer.",
+  "homepage": "https://github.com/Datamart/react-hamburger-drawer",
+  "repository": "github:Datamart/react-hamburger-drawer",
+  "license": "Apache-2.0",
+  "main": "./index.js",
+  "exports": "./index.js",
+  "bugs": {
+    "url": "https://github.com/Datamart/react-hamburger-drawer/issues"
+  },
+  "author": {
+    "name": "Valentin Podkamennyi",
+    "email": "valentin@dtm.io",
+    "url": "https://vpodk.com/"
+  },
+  "keywords": [
+    "hamburger menu",
+    "navigation drawer",
+    "react"
+  ]
+}
