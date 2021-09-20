@@ -27,9 +27,9 @@ import {HamburgerDrawer} from 'react-hamburger-drawer';
         <li><a href="/contact">Contact</a></li>
         <li><a href="/privacy-policy">Privacy Policy</a></li>
       </ul>
-      </HamburgerDrawer>
-      <h1>Your Application Header</h1>
-      ...
+    </HamburgerDrawer>
+    <h1>Your Application Header</h1>
+    ...
   </header>
   ...
 </div>
