@@ -7,8 +7,7 @@ Simple lightweight react hamburger navigation drawer.
 - Google Material spec for sizes, animations, and colors.
 
 ### Accessibility
-Implemented with HTML and CSS only, but for A11y it uses few lines of JavaScript:
-- Support keyboard navigation (Esc and Enter);
+- Support keyboard navigation (Tab, Esc and Enter);
 - Prevents page scrolling when the navigation drawer is open.
 
 ### Usage example:
