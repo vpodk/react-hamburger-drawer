@@ -1,8 +1,17 @@
-
-# react-hamburger-drawer
+# Navigation drawer
 Simple lightweight react hamburger navigation drawer.
 
-## Usage:
+### Key points
+- Hidden `<input type="checkbox">` as a toggle;
+- Fullscreen `<label>` element for veil;
+- Google Material spec for sizes, animations, and colors.
+
+### Accessibility
+Implemented with HTML and CSS only, but for A11y it uses few lines of JavaScript:
+- Support keyboard navigation (Esc and Enter);
+- Prevents page scrolling when the navigation drawer is open.
+
+### Usage example:
 
 ```js
 import {HamburgerDrawer} from 'react-hamburger-drawer';
