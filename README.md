@@ -35,3 +35,5 @@ import {HamburgerDrawer} from 'react-hamburger-drawer';
   ...
 </div>
 ```
+![hamburger-drawer-screen-recording](https://user-images.githubusercontent.com/11623226/133954550-d8bc05e6-e1c1-4e66-bfbf-d28dc0a0f23a.gif)
+
