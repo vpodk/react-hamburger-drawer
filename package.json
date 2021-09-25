@@ -7,6 +7,7 @@
   "license": "Apache-2.0",
   "main": "./index.js",
   "exports": "./index.js",
+  "types": "./index.d.ts",
   "bugs": {
     "url": "https://github.com/Datamart/react-hamburger-drawer/issues"
   },
