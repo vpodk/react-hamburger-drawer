@@ -1,4 +1,6 @@
 # Navigation drawer
+[![Build Status](https://github.com/Datamart/react-hamburger-drawer/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/Datamart/react-hamburger-drawer/actions/workflows/npm-publish.yml) [![License](https://img.shields.io/:license-apache-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0.html) [![NPM version](https://img.shields.io/npm/v/react-hamburger-drawer.svg?style=flat)](https://npmjs.org/package/react-hamburger-drawer) [![NPM downloads](https://img.shields.io/npm/dm/react-hamburger-drawer.svg?style=flat)](https://npmjs.org/package/react-hamburger-drawer)
+
 Simple lightweight react hamburger navigation drawer.
 
 ### Key points
