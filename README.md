@@ -12,8 +12,12 @@ Simple lightweight react hamburger navigation drawer.
 
 ### Usage example:
 
+```bash
+npm install react-hamburger-drawer --save
+```
+
 ```js
-import {HamburgerDrawer} from 'react-hamburger-drawer';
+import HamburgerDrawer from 'react-hamburger-drawer';
 ```
 
 ```html

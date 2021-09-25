@@ -55,3 +55,5 @@ export const HamburgerDrawer = ({ children }) => {
     </nav>
   );
 };
+
+export default HamburgerDrawer;

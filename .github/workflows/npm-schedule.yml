@@ -12,4 +12,4 @@ jobs:
         with:
           node-version: 15
       - run: npm init --force
-      - run: npm install glize komito-analytics
+      - run: npm install react-glize
