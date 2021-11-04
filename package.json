@@ -1,6 +1,6 @@
 {
   "name": "react-hamburger-drawer",
-  "version": "21.9.5",
+  "version": "21.11.3",
   "description": "Simple lightweight react hamburger navigation drawer.",
   "homepage": "https://github.com/Datamart/react-hamburger-drawer",
   "repository": "github:Datamart/react-hamburger-drawer",
@@ -20,5 +20,8 @@
     "hamburger menu",
     "navigation drawer",
     "react"
-  ]
+  ],
+  "dependencies": {
+    "react-focus-bounder": "^1.0.0"
+  }
 }

@@ -1,8 +1,10 @@
 import React, { useEffect, useRef } from "react";
+import FocusBounder from "react-focus-bounder";
 import "./index.css";
 
-export const HamburgerDrawer = ({ children }) => {
+export const HamburgerDrawer = ({ children, useFocusBounder = false }) => {
   const checkbox = useRef(null);
+  const Wrapper = useFocusBounder ? FocusBounder : React.Fragment;
 
   const handleEscKey = (event) => {
     // Closes the navigation drawer by pressing Esc key.
@@ -27,32 +29,34 @@ export const HamburgerDrawer = ({ children }) => {
   }, []);
 
   return (
-    <nav className="HamburgerDrawer" aria-label="Main menu">
-      <input
-        ref={checkbox}
-        type="checkbox"
-        id="HamburgerDrawer-toggle"
-        aria-label="Toggle menu"
-        onKeyUp={handleKeyup}
-        onClick={handleClick}
-      />
-      <label
-        htmlFor="HamburgerDrawer-toggle"
-        tabIndex="-1"
-        aria-hidden="true"
-        hidden
-      >
-        Close menu
-      </label>
-      <div
-        className="HamburgerDrawer-icon"
-        role="button"
-        aria-label="Toggle menu"
-      >
-        <span></span>
-      </div>
-      <div className="HamburgerDrawer-panel">{children}</div>
-    </nav>
+    <Wrapper>
+      <nav className="HamburgerDrawer" aria-label="Main menu">
+        <input
+          ref={checkbox}
+          type="checkbox"
+          id="HamburgerDrawer-toggle"
+          aria-label="Toggle menu"
+          onKeyUp={handleKeyup}
+          onClick={handleClick}
+        />
+        <label
+          htmlFor="HamburgerDrawer-toggle"
+          tabIndex="-1"
+          aria-hidden="true"
+          hidden
+        >
+          Close menu
+        </label>
+        <div
+          className="HamburgerDrawer-icon"
+          role="button"
+          aria-label="Toggle menu"
+        >
+          <span></span>
+        </div>
+        <div className="HamburgerDrawer-panel">{children}</div>
+      </nav>
+    </Wrapper>
   );
 };
 
