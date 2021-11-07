@@ -1,6 +1,6 @@
 {
   "name": "react-hamburger-drawer",
-  "version": "21.11.7",
+  "version": "21.11.8",
   "description": "Simple lightweight react hamburger navigation drawer.",
   "homepage": "https://github.com/Datamart/react-hamburger-drawer",
   "repository": "github:Datamart/react-hamburger-drawer",
@@ -12,7 +12,8 @@
     "url": "https://github.com/Datamart/react-hamburger-drawer/issues"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx ./"
   },
   "author": {
     "name": "Valentin Podkamennyi",
@@ -25,6 +26,7 @@
     "react"
   ],
   "dependencies": {
+    "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-focus-bounder": "^1.0.0"
@@ -33,6 +35,10 @@
     "@babel/preset-env": "^7.16.0",
     "@babel/preset-react": "^7.16.0",
     "@testing-library/react": "^12.1.2",
+    "@typescript-eslint/eslint-plugin": "^5.3.0",
+    "@typescript-eslint/parser": "^5.3.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-react": "^7.26.1",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.3.1",
     "ts-jest": "^27.0.7"
@@ -58,5 +64,52 @@
       "@babel/preset-env",
       "@babel/preset-react"
     ]
-  }
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "es2021": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:react/recommended",
+      "plugin:react/jsx-runtime"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "ecmaVersion": "latest",
+      "sourceType": "module"
+    },
+    "plugins": [
+      "react",
+      "@typescript-eslint"
+    ],
+    "rules": {
+      "indent": [
+        "error",
+        2
+      ],
+      "linebreak-style": [
+        "error",
+        "unix"
+      ],
+      "semi": [
+        "error",
+        "always"
+      ],
+      "no-empty": "warn"
+    },
+    "settings": {
+      "react": {
+        "version": "latest"
+      }
+    }
+  },
+  "eslintIgnore": [
+    "*.test.js"
+  ]
 }
