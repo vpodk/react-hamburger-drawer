@@ -15,9 +15,19 @@ describe('HamburgerDrawer Test Suite', () => {
       </HamburgerDrawer>,
     );
 
+    const checkbox = screen.getByRole('checkbox');
     const classList = document.documentElement.classList;
     expect(classList.contains('HamburgerDrawer-open')).toBe(false);
-    fireEvent.click(screen.getByRole('checkbox'));
+    fireEvent.click(checkbox);
     expect(classList.contains('HamburgerDrawer-open')).toBe(true);
+  
+    expect(checkbox.checked).toBe(true);
+    fireEvent.keyUp(document, {key: 'Escape', code: 27});
+    expect(checkbox.checked).toBe(false);
+  
+    fireEvent.keyUp(checkbox, {key: 'Enter', code: 13});
+    expect(checkbox.checked).toBe(true);
+    fireEvent.keyUp(checkbox, {key: 'Enter', code: 13});
+    expect(checkbox.checked).toBe(false);
   });
 });

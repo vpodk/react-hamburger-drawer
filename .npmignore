@@ -1,3 +1,4 @@
 .github
 node_modules
 index.test.js
+coverage

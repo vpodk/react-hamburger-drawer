@@ -1,6 +1,6 @@
 {
   "name": "react-hamburger-drawer",
-  "version": "21.11.8",
+  "version": "21.11.9",
   "description": "Simple lightweight react hamburger navigation drawer.",
   "homepage": "https://github.com/Datamart/react-hamburger-drawer",
   "repository": "github:Datamart/react-hamburger-drawer",
@@ -12,7 +12,7 @@
     "url": "https://github.com/Datamart/react-hamburger-drawer/issues"
   },
   "scripts": {
-    "test": "jest",
+    "test": "jest --coverage",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx ./"
   },
   "author": {
