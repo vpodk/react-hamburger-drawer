@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import PropTypes from "prop-types";
 import FocusBounder from "react-focus-bounder";
 import "./index.css";
 
@@ -58,6 +59,11 @@ export const HamburgerDrawer = ({ children, useFocusBounder = false }) => {
       </nav>
     </Wrapper>
   );
+};
+
+HamburgerDrawer.propTypes = {
+  children: PropTypes.node.isRequired,
+  useFocusBounder: PropTypes.bool,
 };
 
 export default HamburgerDrawer;
