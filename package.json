@@ -1,6 +1,6 @@
 {
   "name": "react-hamburger-drawer",
-  "version": "21.11.3",
+  "version": "21.11.7",
   "description": "Simple lightweight react hamburger navigation drawer.",
   "homepage": "https://github.com/Datamart/react-hamburger-drawer",
   "repository": "github:Datamart/react-hamburger-drawer",
@@ -10,6 +10,9 @@
   "types": "./index.d.ts",
   "bugs": {
     "url": "https://github.com/Datamart/react-hamburger-drawer/issues"
+  },
+  "scripts": {
+    "test": "jest"
   },
   "author": {
     "name": "Valentin Podkamennyi",
@@ -22,6 +25,37 @@
     "react"
   ],
   "dependencies": {
+    "react": "^17.0.2",
     "react-focus-bounder": "^1.0.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.0",
+    "@babel/preset-react": "^7.16.0",
+    "@testing-library/react": "^12.1.2",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^27.3.1",
+    "ts-jest": "^27.0.7"
+  },
+  "jest": {
+    "verbose": true,
+    "preset": "ts-jest",
+    "testEnvironment": "jsdom",
+    "moduleNameMapper": {
+      "\\.(css|less|scss)$": "identity-obj-proxy"
+    },
+    "transform": {
+      "node_modules/react-focus-bounder/.+\\.(j|t)sx?$": "ts-jest",
+      "^.+\\.(ts|tsx)?$": "ts-jest",
+      "^.+\\.(js|jsx)$": "babel-jest"
+    },
+    "transformIgnorePatterns": [
+      "node_modules/(?!react-focus-bounder/.*)"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
   }
 }
