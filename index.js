@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 // import FocusBounder from "react-focus-bounder";
 import "./index.css";
 
-export const HamburgerDrawer = ({ children, useFocusBounder = false }) => {
+export const HamburgerDrawer = ({ children, /*useFocusBounder = false*/ }) => {
   const checkbox = useRef(null);
   const Wrapper = /*useFocusBounder ? FocusBounder :*/ React.Fragment;
 
