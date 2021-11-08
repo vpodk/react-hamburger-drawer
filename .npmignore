@@ -1,7 +1,4 @@
 .github
 node_modules
-index.css
-index.test.js
 coverage
-webpack.config.js
 tsconfig.js
