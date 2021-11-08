@@ -1,6 +1,5 @@
 .github
 node_modules
-index.js
 index.css
 index.test.js
 coverage

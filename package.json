@@ -11,9 +11,6 @@
   "bugs": {
     "url": "https://github.com/Datamart/react-hamburger-drawer/issues"
   },
-  "publishConfig": {
-    "directory": "dist"
-  },
   "scripts": {
     "build": "webpack --mode production",
     "test": "jest --coverage",
