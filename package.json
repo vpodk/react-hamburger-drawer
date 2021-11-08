@@ -1,6 +1,6 @@
 {
   "name": "react-hamburger-drawer",
-  "version": "21.11.12",
+  "version": "21.11.13",
   "description": "Simple lightweight react hamburger navigation drawer.",
   "homepage": "https://github.com/Datamart/react-hamburger-drawer",
   "repository": "github:Datamart/react-hamburger-drawer",
@@ -12,9 +12,10 @@
     "url": "https://github.com/Datamart/react-hamburger-drawer/issues"
   },
   "scripts": {
-    "build": "webpack --mode production",
     "test": "jest --coverage",
-    "lint": "eslint --ext .js,.jsx,.ts,.tsx ./"
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx ./",
+    "transpile": "babel ./ -d dist --copy-files",
+    "prepublishOnly": "npm run transpile"
   },
   "author": {
     "name": "Valentin Podkamennyi",
@@ -33,6 +34,8 @@
     "react-focus-bounder": "^1.0.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
     "@babel/preset-env": "^7.16.0",
     "@babel/preset-react": "^7.16.0",
     "@testing-library/react": "^12.1.2",
