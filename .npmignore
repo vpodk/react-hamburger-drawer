@@ -2,6 +2,8 @@
 node_modules
 coverage
 
-tsconfig.js
 .github
 src
+index.test.js
+tsconfig.json
+webpack.config.js
