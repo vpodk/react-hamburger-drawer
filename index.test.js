@@ -1,6 +1,6 @@
 import React from 'react';
 import {fireEvent, render, screen} from '@testing-library/react';
-import HamburgerDrawer from './index';
+import HamburgerDrawer from './src/index';
 
 describe('HamburgerDrawer Test Suite', () => {
   it('HamburgerDrawer Test Case', () => {
