@@ -1,11 +1,11 @@
 import React, { useEffect, useRef } from "react";
 import PropTypes from "prop-types";
-// import FocusBounder from "react-focus-bounder";
+import FocusBounder from "react-focus-bounder";
 import "./index.css";
 
 export const HamburgerDrawer = ({ children, useFocusBounder = false }) => {
   const checkbox = useRef(null);
-  const Wrapper = /*useFocusBounder ? FocusBounder :*/ React.Fragment;
+  const Wrapper = useFocusBounder ? FocusBounder : React.Fragment;
 
   const handleEscKey = (event) => {
     // Closes the navigation drawer by pressing Esc key.
