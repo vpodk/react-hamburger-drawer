@@ -1,6 +1,6 @@
 {
   "name": "react-hamburger-drawer",
-  "version": "21.11.16",
+  "version": "21.11.17",
   "description": "Simple lightweight react hamburger navigation drawer.",
   "homepage": "https://github.com/Datamart/react-hamburger-drawer",
   "repository": "github:Datamart/react-hamburger-drawer",
@@ -30,7 +30,7 @@
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-focus-bounder": "^1.1.0"
+    "react-focus-bounder": "^1.1.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.16.0",
@@ -117,8 +117,5 @@
         "version": "latest"
       }
     }
-  },
-  "eslintIgnore": [
-    "*.test.js"
-  ]
+  }
 }
