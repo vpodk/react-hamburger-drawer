@@ -40,6 +40,13 @@ import HamburgerDrawer from 'react-hamburger-drawer';
   ...
 </div>
 ```
+
+## Component props
+
+- `useFocusBounder` - An optional property to enable or disable [FocusBounder](https://github.com/wayfair-incubator/react-focus-bounder) component. Default `false`.
+
+## Screenshots
+
 <table width="100%" border="0" cellpadding="0" cellspacing="0">
   <tr>
     <td width="70%">
