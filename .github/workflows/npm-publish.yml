@@ -9,7 +9,9 @@ on:
     
 jobs:
   build:
+    if: github.repository == 'Datamart/react-hamburger-drawer'
     runs-on: ubuntu-latest
+    timeout-minutes: 2
 
     strategy:
       matrix:

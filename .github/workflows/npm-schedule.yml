@@ -7,6 +7,7 @@ on:
 jobs:
   init:
     runs-on: ubuntu-latest
+    timeout-minutes: 2
     steps:
       - uses: actions/setup-node@v1
         with:
