@@ -1,4 +1,5 @@
 const path = require("path");
+const ESLintPlugin = require("eslint-webpack-plugin");
 
 module.exports = {
   mode: "production",
@@ -8,15 +9,14 @@ module.exports = {
     filename: "index.js",
     libraryTarget: "commonjs2",
   },
+  plugins: [
+    new ESLintPlugin({
+      extensions: ["js", "jsx"],
+      exclude: ["/node_modules/", "/dist/"],
+    }),
+  ],
   module: {
     rules: [
-      {
-        enforce: "pre",
-        test: /\.jsx?$/,
-        include: path.resolve(__dirname, "src"),
-        exclude: /(node_modules|dist)/,
-        use: "eslint-loader",
-      },
       {
         test: /\.jsx?$/,
         include: path.resolve(__dirname, "src"),
