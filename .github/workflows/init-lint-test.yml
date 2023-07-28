@@ -1,0 +1,26 @@
+
+name: init-lint-test
+
+on:
+  workflow_dispatch:
+    
+jobs:
+  build:
+    if: github.repository == 'Datamart/react-hamburger-drawer'
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+
+    strategy:
+      matrix:
+        node-version: [16, 17, 18]
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm install
+      - run: npm run lint
+      - run: npm run test
+      - run: npm run build
