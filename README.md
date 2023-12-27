@@ -47,6 +47,30 @@ import HamburgerDrawer from 'react-hamburger-drawer';
 
 - `useFocusBounder` - An optional property to enable or disable [FocusBounder](https://github.com/wayfair-incubator/react-focus-bounder) component. Default `false`.
 
+## Next.js v13+ and other SSRs
+
+> All components inside the app directory are React Server Components by default.
+> To use `useRef` or `useEffect` hooks, the component must be marked as client component: `"use client"`.
+
+Create a "drawer.js" file with the following content:
+
+```js
+"use client";
+import HamburgerDrawer from 'react-hamburger-drawer';
+export default HamburgerDrawer;
+```
+
+And import the `HamburgerDrawer` component from the "drawer.js" module:
+
+```js
+import HamburgerDrawer from './drawer';
+```
+
+Links:
+- https://nextjs.org/docs/messages/react-client-hook-in-server-component
+- https://nextjs.org/docs/app/building-your-application/rendering
+- https://react.dev/reference/react/use-client
+
 ## Screenshots
 
 <table width="100%" border="0" cellpadding="0" cellspacing="0">
