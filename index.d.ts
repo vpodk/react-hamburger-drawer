@@ -1,10 +1,11 @@
 import React from "react";
 
-export interface HamburgerDrawerProps {
-  children: React.ReactNode;
-  useFocusBounder: boolean;
+declare module "react-hamburger-drawer" {
+  export interface HamburgerDrawerProps {
+    children: React.ReactNode;
+    useFocusBounder: boolean;
+  }
+
+  const HamburgerDrawer: React.FunctionComponent<HamburgerDrawerProps>;
+  export default HamburgerDrawer;
 }
-
-declare const HamburgerDrawer: React.FunctionComponent<HamburgerDrawerProps>;
-
-export default HamburgerDrawer;
