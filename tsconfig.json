@@ -3,5 +3,9 @@
     "jsx": "react",
     "esModuleInterop": true,
     "allowJs": true
-  }
+  },
+  "include": [
+    "src/**/*",
+    "index.d.ts",
+  ]
 }
