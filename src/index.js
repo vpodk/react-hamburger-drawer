@@ -1,10 +1,10 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import FocusBounder from "react-focus-bounder";
 import "./index.css";
 
 export const HamburgerDrawer = ({ children, useFocusBounder = false }) => {
-  const checkbox = useRef(null);
+  const checkbox = React.useRef(null);
   const Wrapper = useFocusBounder ? FocusBounder : React.Fragment;
 
   const handleEscKey = (event) => {
@@ -24,7 +24,7 @@ export const HamburgerDrawer = ({ children, useFocusBounder = false }) => {
     document.documentElement.classList.toggle("HamburgerDrawer-open");
   };
 
-  useEffect(() => {
+  React.useEffect(() => {
     document.addEventListener("keyup", handleEscKey);
     return () => document.removeEventListener("keyup", handleEscKey);
   }, []);
