@@ -1,15 +1,15 @@
 {
   "name": "react-hamburger-drawer",
-  "version": "21.11.26",
+  "version": "21.11.27",
   "description": "Simple lightweight react hamburger navigation drawer.",
-  "homepage": "https://github.com/Datamart/react-hamburger-drawer",
-  "repository": "github:Datamart/react-hamburger-drawer",
+  "homepage": "https://github.com/vpodk/react-hamburger-drawer",
+  "repository": "github:vpodk/react-hamburger-drawer",
   "license": "Apache-2.0",
   "main": "./dist/index.js",
   "exports": "./dist/index.js",
   "types": "./index.d.ts",
   "bugs": {
-    "url": "https://github.com/Datamart/react-hamburger-drawer/issues"
+    "url": "https://github.com/vpodk/react-hamburger-drawer/issues"
   },
   "scripts": {
     "test": "jest --coverage",
@@ -21,7 +21,11 @@
     "email": "valentin@dtm.io",
     "url": "https://vpodk.com/"
   },
-  "keywords": ["hamburger menu", "navigation drawer", "react"],
+  "keywords": [
+    "hamburger menu",
+    "navigation drawer",
+    "react"
+  ],
   "dependencies": {
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
@@ -60,10 +64,15 @@
       "^.+\\.(ts|tsx)?$": "ts-jest",
       "^.+\\.(js|jsx)$": "babel-jest"
     },
-    "transformIgnorePatterns": ["node_modules/(?!react-focus-bounder/.*)"]
+    "transformIgnorePatterns": [
+      "node_modules/(?!react-focus-bounder/.*)"
+    ]
   },
   "babel": {
-    "presets": ["@babel/preset-env", "@babel/preset-react"]
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
   },
   "eslintConfig": {
     "env": {
@@ -84,11 +93,23 @@
       "ecmaVersion": "latest",
       "sourceType": "module"
     },
-    "plugins": ["react", "@typescript-eslint"],
+    "plugins": [
+      "react",
+      "@typescript-eslint"
+    ],
     "rules": {
-      "indent": ["error", 2],
-      "linebreak-style": ["error", "unix"],
-      "semi": ["error", "always"],
+      "indent": [
+        "error",
+        2
+      ],
+      "linebreak-style": [
+        "error",
+        "unix"
+      ],
+      "semi": [
+        "error",
+        "always"
+      ],
       "no-empty": "warn"
     },
     "settings": {

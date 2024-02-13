@@ -1,14 +1,17 @@
 # Navigation drawer
-[![Build Status](https://github.com/Datamart/react-hamburger-drawer/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/Datamart/react-hamburger-drawer/actions/workflows/npm-publish.yml) [![License](https://img.shields.io/:license-apache-blue.svg?logo=apache)](https://www.apache.org/licenses/LICENSE-2.0.html) [![NPM version](https://img.shields.io/npm/v/react-hamburger-drawer.svg?logo=npm)](https://npmjs.org/package/react-hamburger-drawer) [![NPM downloads](https://img.shields.io/npm/dm/react-hamburger-drawer.svg?style=flat)](https://npmjs.org/package/react-hamburger-drawer)
+
+[![Build Status](https://github.com/vpodk/react-hamburger-drawer/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/vpodk/react-hamburger-drawer/actions/workflows/npm-publish.yml) [![License](https://img.shields.io/:license-apache-blue.svg?logo=apache)](https://www.apache.org/licenses/LICENSE-2.0.html) [![NPM version](https://img.shields.io/npm/v/react-hamburger-drawer.svg?logo=npm)](https://npmjs.org/package/react-hamburger-drawer) [![NPM downloads](https://img.shields.io/npm/dm/react-hamburger-drawer.svg?style=flat)](https://npmjs.org/package/react-hamburger-drawer)
 
 Simple lightweight react hamburger navigation drawer (based on [navigation-drawer](https://github.com/vpodk/navigation-drawer)).
 
 ### Key points
+
 - Hidden `<input type="checkbox">` as a toggle;
 - Fullscreen `<label>` element for veil;
 - Google Material spec for sizes, animations, and colors.
 
 ### Accessibility
+
 - Support keyboard navigation (Tab, Esc and Enter);
 - Prevents page scrolling when the navigation drawer is open.
 
@@ -21,7 +24,7 @@ yarn add react-hamburger-drawer
 ```
 
 ```js
-import HamburgerDrawer from 'react-hamburger-drawer';
+import HamburgerDrawer from "react-hamburger-drawer";
 ```
 
 ```html
@@ -56,17 +59,18 @@ Create a "drawer.js" file with the following content:
 
 ```js
 "use client";
-import HamburgerDrawer from 'react-hamburger-drawer';
+import HamburgerDrawer from "react-hamburger-drawer";
 export default HamburgerDrawer;
 ```
 
 And import the `HamburgerDrawer` component from the "drawer.js" module:
 
 ```js
-import HamburgerDrawer from './drawer';
+import HamburgerDrawer from "./drawer";
 ```
 
 Links:
+
 - https://nextjs.org/docs/messages/react-client-hook-in-server-component
 - https://nextjs.org/docs/app/building-your-application/rendering
 - https://react.dev/reference/react/use-client
@@ -83,4 +87,3 @@ Links:
     </td>
   </tr>
 </table>
-
