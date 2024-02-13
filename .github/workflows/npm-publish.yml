@@ -5,11 +5,11 @@ name: publish
 
 on:
   push:
-    branches: [ main ]
-    
+    branches: [main]
+
 jobs:
   build:
-    if: github.repository == 'Datamart/react-hamburger-drawer'
+    if: github.repository == 'vpodk/react-hamburger-drawer'
     runs-on: ubuntu-latest
     timeout-minutes: 2
 
